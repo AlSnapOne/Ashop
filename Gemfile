@@ -1,12 +1,12 @@
 source 'https://rubygems.org'
-gem 'ruby'
+
 gem 'rails'
 gem 'devise', '2.1.2'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-  gem 'pg'
+  gem 'sqlite3'
 
 
 # Gems used only for assets and not required
