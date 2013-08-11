@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ONLINE SHOP</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+  <%= stylesheet_link_tag 'scaffold' %>
+  <%= stylesheet_link_tag 'screen', :media => 'screen' %>
+  <%= stylesheet_link_tag 'print', :media => 'print' %>
+</head>
+
+
+<body>
+
+	
+<div id='header'>
+<!-- Header Image Displays here -->
+</div>
+<div id='menu'>
+<!-- Header Image Displays here -->
+<div id="navbar">
+
+<ul>
+
+<li><a href="/home/index">Home</a></li>
+
+<li><a href="/items">Our Products</a></li>
+
+<li><a href="/articles">Comments</a></li>
+
+<li><a href="/about">About us</a></li>
+
+<li><a href="/contact">Contact Us</a></li>
+
+<li><a href="/users/sign_in">Your profile</a></li>
+
+<li><%= link_to 'Log out', destroy_user_session_path, :method => :delete
+ %></li>
+
+</ul>
+
+</div>
+</div>
+<div id='container'>
+<div id='content'>
+<% if flash[:notice] -%>
+    <p style="color: green"><%= flash[:notice] %></p>
+    <%end -%>
+
+<%= yield %>
+</div>
+
+
+
+<div id='first-column'>
+	 <% if user_signed_in? %>
+  <div>Signed in as... <%= current_user.email %> (<%= link_to 'Sign out', destroy_user_session_path, :method => :delete
+ %>)</div>
+ <% else %>
+  <%= link_to 'Register', new_user_registration_path %> or <%= link_to 'Sign in', new_user_session_path %>
+<% end %>
+<div class="searchbox">
+<h2 class="BoxHeaders">Search</h2>
+<%= render :partial => 'items/search' %>
+</div>
+<div class="box">
+<h1 class="BoxHeaders">Shop by category:</h1></br>
+<h2><%= render '/items/categoryDistinctList' %>
+
+
+</h2>
+
+</div>
+<div class="section">
+<div class="box">
+<h2 class="BoxHeaders">Our best sellers!</h2>
+<p><a href="/items/2"><img src="/assets/tbseller.jpg" alt="image of product" style="height:100px"></a>
+</p>
+</div>
+</div>
+
+</div>
+</div>
+<div id='footer'>
+<h6 class="footertext">&copy; A Shop 2013</h6>
+</div>
+
+</body>
+</html>

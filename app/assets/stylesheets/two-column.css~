@@ -1,0 +1,175 @@
+body {
+    font:15px/16px "Trebuchet MS", Arial, sans-serif;
+    color:#7e543a;
+    background:#2c2d1e url("/assets/starsan.jpg") no-repeat top center fixed;
+    margin: 0;
+    padding: 0;
+}
+h1, h6 {
+    margin:15px;
+    font-weight: normal;
+    font-size: 2em;
+    text-align: center;
+    line-height: 1.5em;
+    }
+
+
+div#container {
+    border: none;
+    position: relative;
+    min-height: 900px;
+    /*border: 1px solid gray;*/
+    /*background: lightgrey;*/
+    max-width: 1000px;
+    min-width: 950px;
+    margin: auto;
+    overflow:hidden;
+}
+div#first-column {
+ 
+     left: 710px;
+    width: 240px;
+    position: absolute;
+    padding-top: 15px;
+    top: 0;
+    bottom: 0;
+    border: 1px solid #EDF0E1;
+    background-color: white;
+    
+   
+}
+
+div#first-column img
+{
+    min-width: 250px;
+    min-height: 200px;
+
+}
+
+
+#first-column 
+{
+    text-align: center;
+}
+
+div#content {
+    left: 0;
+    padding: 5px;
+    /*background: rgb(240, 240, 240);*/
+    background-color: white;
+    min-height: 392px;
+    width: 700px;
+	padding-bottom:3000px;
+	margin-bottom:-3000px;
+}
+div#header,
+div#footer,
+div#menu {
+    
+    padding: 0;
+    
+    max-width: 994px;
+    min-width: 744px;
+    margin: auto;
+}
+div#menu {
+    border-bottom: none;
+    width: 994px;
+    height: 28px;
+}
+div#header {
+    border-bottom: none;
+    
+    width: 994px;
+    height: 100px;
+}
+div#footer {
+    border-top: none;
+}
+
+div.box {
+   
+    padding-top:20px;
+    /*padding: 5px;*/
+    height: 280px;
+}
+div.box h2{
+    width: 220px;
+	margin-top:20px;
+    text-align: center;
+}
+div.box img{
+	float:left;
+}
+
+
+div.categoryListAll a
+{
+    padding-top: 20px;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: normal;
+}
+
+
+
+div.section{
+	padding-bottom:3000px;
+	margin-bottom:-3000px;
+}
+
+
+
+div.searchbox {
+    /*border: 1px solid gray;*/
+    margin: 0px 0px 30px 1px;
+    padding: 5px;
+    height: 65px;
+}
+
+/* ------------------------- */
+#navbar{
+    
+
+height: 64px;
+}
+    
+
+
+}
+ #navbar ul          
+ {
+     margin: 0;         
+     padding: 5px;         
+     list-style-type: none;         
+     text-align: left;        
+     background-color: #A3D119
+;         
+ }  
+ 
+ #navbar ul li           
+ {
+     display: inline;
+       
+ }  
+ 
+ #navbar ul li a          
+ {
+     text-decoration: none;         
+     padding: .2em 1em;         
+     color: #fff;         
+     background: url("/assets/navigation.png") no-repeat;        
+     }  
+     
+#navbar ul li a:hover          
+{
+    color: #000;         
+             
+}
+#first-column a:hover
+{
+  background-color: transparent;
+  color: black;
+  
+}
+
