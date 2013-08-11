@@ -113,8 +113,8 @@ div.categoryListAll a
 
 
 div.section{
-	padding-bottom:3000px;
-	margin-bottom:-3000px;
+    padding-bottom:3000px;
+    margin-bottom:-3000px;
 }
 
 
@@ -127,47 +127,44 @@ div.searchbox {
 }
 
 /* ------------------------- */
-.navbar{
-    
-
-height: 64px;
+#navbar{ 
+    height: 64px;
 }
     
 
 
 }
- .navbar ul          
+#navbar ul          
  {
-     margin: 0;         
-     padding: 5px;         
-     list-style-type: none;         
-     text-align: left;        
-     background-color: #A3D119
-;         
+    margin: 0;         
+    padding: 5px;         
+    list-style-type: none;         
+    text-align: left;        
+    background-color: #A3D119;         
  }  
  
- .navbar ul li           
+#navbar ul li           
  {
-     display: inline;     
+    display: inline;     
  }  
  
- .navbar ul li a          
- {
-     text-decoration: none;         
-     padding: .2em 1em;         
-     color: #fff;         
-     background: url("/assets/navigation.png") no-repeat;        
-     }  
+#navbar ul li a          
+    {
+    text-decoration: none;         
+    padding: .2em 1em;         
+    color: #fff;         
+    background: url("/assets/navigation.png") no-repeat;        
+    }  
      
-.navbar ul li a:hover          
-{
+#navbar ul li a:hover          
+    {
     color: #000;         
              
-}
-.first-column a:hover
+    }
+#first-column a:hover
 {
-  background-color: transparent;
-  color: black;
+    background-color: transparent;
+    color: black;
   
 }
 
